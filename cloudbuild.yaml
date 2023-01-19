@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-f', 'gcr.io/bold-syntax-374309/trainer_hugging.dockerfile', '-t', 'gcr.io/bold-syntax-374309/trainer_hugging:latest']
+  args: ['build', '-f', 'gcr.io/bold-syntax-374309/trainer_hugging.dockerfile','-t','gcr.io/bold-syntax-374309/trainer_hugging:latest','.']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'gcr.io/bold-syntax-374309/trainer:latest']
 timeout: 4000s
